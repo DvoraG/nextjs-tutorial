@@ -3,8 +3,10 @@ import Link from "next/link";
 const HomePage = () => {
   return (
     <div>
-      <h1>Home Page</h1>
-      <Link className='link' href='/about'>about page</Link>
+      <h1>NextJS Tutorial</h1>
+      <Link className='link btn btn-accent' href='/client'>
+        Get Started
+      </Link>
     </div>
   );
 }
