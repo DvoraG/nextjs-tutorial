@@ -22,3 +22,4 @@ starter-code/design.html
 node_modules
 .vscode
 .next
+.env
