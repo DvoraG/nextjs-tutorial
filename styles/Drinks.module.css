@@ -1,0 +1,13 @@
+.small {
+    max-width: 56.25rem;
+    margin-inline: auto;
+}
+.box {  
+    height: 8rem;
+    border-radius: 1rem;
+    background-color: var(--acc-blue);
+    opacity: 0.2;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.3);
+    backdrop-filter: blur(0.75rem);
+    margin-block-end: 2rem;
+}
