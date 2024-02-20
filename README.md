@@ -17,7 +17,7 @@ npx create-next-app@latest appName
 - app folder - where we will spend most of our time
   - setup routes, layouts, loading states, etc
 - node_modules - project dependencies
-- public - static assets
+- public - static assets (i.e. images)
 - .gitignore - sets which will be ignored by source control
 - bunch of config files (will discuss as we go)
 - in package.json look scripts

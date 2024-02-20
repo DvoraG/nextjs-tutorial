@@ -21,3 +21,4 @@ starter-code/design.html
 */gsap-public
 node_modules
 .vscode
+.next
