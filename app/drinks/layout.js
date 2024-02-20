@@ -1,4 +1,4 @@
-import styles from '../../styles/Drinks.module.css';
+import styles from '../../styles/DrinksList.module.css';
 
 const DrinksLayout = ({children}) => {
   return (
