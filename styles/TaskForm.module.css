@@ -1,0 +1,28 @@
+.content {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-right: none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+}
+.content:focus {
+    outline: none;
+    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.1);
+}
+.grid{
+    margin-block-end: 3rem;
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    align-items: center;
+}
+.submitBtn {
+    padding-block: 0.75rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-transform: capitalize;
+}

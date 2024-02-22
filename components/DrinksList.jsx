@@ -4,7 +4,7 @@ import styles from '../styles/DrinksList.module.css';
 
 const DrinksList = ({drinks}) => {
   return (
-    <ul className={styles.menu}>
+    <ul className='menu'>
         {
             drinks.map((drink) => {
                 return (
