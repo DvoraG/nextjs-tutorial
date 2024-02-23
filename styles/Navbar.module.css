@@ -34,10 +34,13 @@
 }
 
 .item:hover {
-    background: var(--primary-500);
-    color: var(--gray-200);
-    border-radius: 0.5rem;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  background: var(--primary-500);
+  color: var(--gray-200);
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.item:active {
+  box-shadow: inset 4px 4px 8px rgba(0,0,0,0.2);
 }
 
 @media (40rem > width) {

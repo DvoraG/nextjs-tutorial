@@ -1,6 +1,6 @@
 import styles from '@/styles/TaskList.module.css';
 import Link from "next/link";
-import DeleteForm from "./DeleteForm";
+import DeleteForm from "./DeleteFormCustom";
 import { getAllTasks } from '@/utils/actions';
 
 const TaskList = async () => {

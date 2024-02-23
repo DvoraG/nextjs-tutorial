@@ -1,12 +1,13 @@
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Providers from "./providers";
 import "./globals.css";
 
 const inter = Inter(
   { 
     subsets: ["latin"],
     display: 'swap',
-    fallback: ['system-ui']
+    fallback: ['system-ui'],
   }
 );
 
@@ -21,7 +22,9 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <main>
-          {children}
+          <Providers>
+            {children}
+          </Providers>
         </main>
       </body>
     </html>
