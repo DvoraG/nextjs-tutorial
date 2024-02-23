@@ -1,7 +1,7 @@
-.small {
+/* .small {
     max-width: 56.25rem;
     margin-inline: auto;
-}
+} */
 .box {  
     height: 8rem;
     border-radius: 1rem;
@@ -11,14 +11,7 @@
     backdrop-filter: blur(0.75rem);
     margin-block-end: 2rem;
 }
-.menu {
-    list-style: none;
-    font-size: 1.75rem;
-    font-weight: 600;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-}
+
 .img-container {
     position: relative;
     height: 20rem;

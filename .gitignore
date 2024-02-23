@@ -15,6 +15,7 @@
 .DS_Store
 .prettierignore
 **/*.jpg
+**/*.svg
 starter-code/preview.html
 starter-code/design.html
 *.zip
@@ -23,3 +24,4 @@ node_modules
 .vscode
 .next
 .env
+*.db

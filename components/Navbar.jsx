@@ -4,8 +4,8 @@ import styles from '../styles/Navbar.module.css';
 const links = [
     {id: 1, href: '/client', label: 'client'},
     {id: 2, href: '/drinks', label: 'drinks'},
-    {id: 3, href: '/tasks', label: 'tasks'},
-    {id: 4, href: '/query', label: 'query'},
+    {id: 3, href: '/prisma-example', label: 'prisma'},
+    {id: 4, href: '/tasks', label: 'tasks'},
 ];
 
 const Navbar = () => {

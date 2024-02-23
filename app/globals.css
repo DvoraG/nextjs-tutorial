@@ -62,10 +62,43 @@ h2 {
   font-size: 1.75rem;
   font-weight: 600;
 }
+input[type="checkbox"] {
+  appearance: none;
+  height: 40px;
+  width: 40px;
+  background-color: var(--primary-300);
+  border: 1px solid var(--primary-500);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
 
+input[type="checkbox"]:checked {
+  background-color: var(--primary-500);
+}
+
+input[type="checkbox"]::before {
+  content: '\2714'; /* unicode check mark code */ 
+  font-size: 1.5rem;
+  color: var(--gray-100);
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+label {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+}
 main {
   max-width: 1170px;
-  padding-inline: 2rem;
   margin-inline: auto;
   padding-block: 2rem 5rem;
 }
@@ -80,10 +113,31 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.small {
+  max-width: 56.25rem;
+  margin-inline: auto;
+}
+.tiny {
+  max-width: 40rem;
+  margin-inline: auto;
+}
+.tiniest {
+  max-width: 25rem;
+  margin-inline: auto;
+}
 .container {
   width: 100%;
   padding-inline: 2rem;
   margin-inline: auto;
+}
+.menu {
+  margin-block-start: 0.5rem;
+  list-style: none;
+  font-size: 1.75rem;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
 }
 .flex {
   display: flex;
@@ -93,7 +147,6 @@ a {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
 }
 .img {
   display: block;
@@ -122,7 +175,15 @@ a {
   font-family: inherit;
   font-size: 1.25rem;
   transition: all 0.3s linear;
-
+}
+.btn-small {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s linear;
 }
 .btn-primary {
   background: var(--primary-500);
@@ -133,6 +194,12 @@ a {
   background: var(--gray-200);
   color: var(--primary-500);
 }
+.btn-primary:active {
+  background: var(--primary-500);
+  color: var(--gray-200);
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.2);
+}
+
 .btn-secondary {
   background: var(--gray-200);
   color: var(--primary-500);
@@ -142,14 +209,38 @@ a {
   background: var(--primary-500);
   color: var(--gray-200);
 }
-.btn-accent {
+.btn-accent-green {
   background: var(--acc-green);
+  color: var(--primary-100);
+}
+.btn-accent-red {
+  background: var(--acc-red);
   color: var(--primary-100);
 }
 .btn-accent:hover {
   box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
   background: var(--primary-100);
+}
+.btn-accent-green:hover {
   color: var(--acc-green);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  background: var(--primary-100);
+}
+.btn-accent-green:active {
+  background: var(--acc-green);
+  color: var(--primary-100);
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-accent-red:hover {
+  color: var(--acc-red);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  background: var(--primary-100);
+}
+.btn-accent-red:active {
+  background: var(--acc-red);
+  color: var(--primary-100);
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.2);
 }
 /* Spinner for loading.js */
 .loader {
